@@ -1,0 +1,126 @@
+/* global */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Jost', sans-serif;
+    color: rgb(82, 75, 73);
+}
+html {
+    position: relative; min-height: 100%;}
+body {
+    margin: 0 auto 150px;
+}
+.grid-container{
+    display:grid;
+    grid-template-areas: "banner"
+                            "nav-bar"
+                            "carrusel"
+                            "cards"
+                            "box"
+                            "box-text"
+                            "main-footer";
+
+}
+/* header */
+.banner{
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+    grid-area: banner;
+}
+.banner img {
+    max-width: 200px;
+    max-height: auto;
+}
+a {
+    text-decoration: none;
+    color: rgb(82, 75, 73);
+}
+
+.menu {
+    text-align: center;
+    background-color: rgb(139, 200, 209);
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: nav-bar;
+ 
+}
+
+.menu ul li {
+    display: inline;
+    margin: 16px;
+}
+/* main index*/
+.carrusel {
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+    grid-area: carrusel;
+}
+.carrusel img {
+    width: 95%;
+    height: 25em;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin:64px;
+    grid-area: cards;
+    
+}
+.cardBox {
+    border: 2px solid lightgray;
+    padding: 24px;
+}
+.cardBox img {
+    width: 20em;
+}
+
+.box {
+    display:flex;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom:80px;
+    border: 24px solid rgb(221, 179, 58);
+    grid-area:box;
+ 
+
+
+   
+}
+.box img {
+    width: 20em; 
+}
+.boxText {
+    margin: 24px;
+    grid-area:box-text
+}
+/* footer */
+.mainFooter {
+    text-align: center;
+    background-color: rgb(139, 200, 209);
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    grid-area: main-footer;
+}
+/* }
+@media (min-width:600px) {
+.grid-container {
+    grid-template: "banner "
+    "nav-bar" 
+    "carrusel"
+    "cards"
+    "box"
+    "box-text"
+    "main-footer";
+}
+} */
+
+
